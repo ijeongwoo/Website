@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>정우의 초프과제 웹사이트 만들기 🐾</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Jua', sans-serif, system-ui;
+            background-color: #f7f3ed;
+            color: #5a4d41;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(212, 196, 178, 0.3);
+            border: 2px solid #f0e6dc;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #f0e6dc;
+            margin-bottom: 40px;
+        }
+        nav .logo {
+            font-size: 1.3em;
+            color: #d4838b;
+        }
+        nav div a {
+            text-decoration: none;
+            color: #b89783;
+            margin-left: 15px;
+            font-size: 1.1em;
+        }
+        nav div a:hover {
+            color: #d4838b;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background-color: #fce4ec;
+            color: #b56576;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .hero-box {
+            text-align: center;
+            padding: 20px 0 40px 0;
+        }
+        .hero-text {
+            font-size: 2.2em;
+            color: #4a3b32;
+            margin-bottom: 15px;
+            word-break: keep-all;
+        }
+        .hero-sub {
+            font-size: 1.15em;
+            color: #8c7b70;
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .btn {
+            padding: 12px 24px;
+            background-color: #f8bbd0;
+            color: #4a3b32;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(248, 187, 208, 0.4);
+            display: inline-block;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #f48fb1;
+        }
+
+        .card {
+            background-color: #faf6f0;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 2px solid #f0e6dc;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #d4838b;
+            font-size: 1.4em;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #6b5b52;
+            margin-bottom: 0;
+        }
+
+        .email-text {
+            font-size: 1.15em;
+            font-weight: bold;
+            color: #d4838b;
+            margin-top: 10px;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .tag {
+            padding: 6px 14px;
+            background-color: #fce4ec;
+            color: #b56576;
+            border-radius: 15px;
+            font-size: 1em;
+        }
+        .tag:nth-child(2n) { background-color: #efebe9; color: #6d4c41; }
+        .tag:nth-child(3n) { background-color: #fff9c4; color: #fbc02d; }
+        .tag:nth-child(4n) { background-color: #f8bbd0; color: #ad1457; }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #a89f95;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">🐾 jw.log</div>
+            <div>
+                <a href="#about">소개</a>
+                <a href="#study">공부</a>
+                <a href="#contact">연락</a>
+            </div>
+        </nav>
+
+        <div class="hero-box">
+            <span class="section-tag">👋 WELCOME</span>
+            <div class="hero-text">
+                안녕하세요!<br>
+                <span style="color: #d4838b;">이정우</span>입니다 💻✨
+            </div>
+            <div class="hero-sub">
+                배운 것을 차곡차곡 쌓아가며<br>
+                재미있는 웹사이트를 만들어가고 있어요!
+            </div>
+            <div class="btn-group">
+                <a href="#about" class="btn">구경하기 👀</a>
+            </div>
+        </div>
+
+        <div class="card" id="about">
+            <span class="section-tag" style="background-color: #fce4ec;">ABOUT ME</span>
+            <h2>저를 소개합니다 🙋‍♂️</h2>
+            <p>
+                컴퓨터인공지능학부에서 전공 공부를 하며 차근차근 개발자의 꿈을 키워나가고 있어요.<br>
+                자료구조, 알고리즘 같은 탄탄한 기초부터 실전 코딩까지 열심히 익히는 중이랍니다! 🚀
+            </p>
+        </div>
+
+        <div class="card" id="study">
+            <span class="section-tag" style="background-color: #fff9c4; color: #afb42b;">STUDY LOG</span>
+            <h2>공부하고 있는 것들 📚</h2>
+            <p>요즘 주로 다루고 흥미를 느끼는 기술들이에요.</p>
+            <div class="tag-container">
+                <span class="tag">C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">자료구조</span>
+                <span class="tag">알고리즘</span>
+                <span class="tag">Git / GitHub</span>
+                <span class="tag">Linux</span>
+            </div>
+        </div>
+
+        <div class="card" id="contact">
+            <span class="section-tag" style="background-color: #f8bbd0; color: #ad1457;">CONTACT</span>
+            <h2>연락주세요 💌</h2>
+            <p>궁금한 점이 있거나 소통하고 싶으시다면 언제든 편하게 연락 주세용!</p>
+            <div class="email-text">
+                📧 이메일: ijeongwoo0109@jbnu.ac.kr
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026. Lee Jung Woo. All rights reserved. 💛</p>
+        </footer>
+    </div>
+</body>
+</html>
